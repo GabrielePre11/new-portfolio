@@ -3,6 +3,7 @@
 import Container from "@/layout/Container";
 import React, { useState } from "react";
 import Menu from "./Menu";
+import Link from "next/link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -14,9 +15,9 @@ export default function Header() {
     >
       <Container className="flex items-center justify-between py-3.5 border-x border-zinc-600 border-dashed">
         {/*=============== Title ===============*/}
-        <a className="text-3xl font-dancing" href="/">
+        <Link href={"/"} className="text-3xl font-dancing">
           GP
-        </a>
+        </Link>
 
         {/*=============== Buttons ===============*/}
         <div className="flex items-center gap-2">
