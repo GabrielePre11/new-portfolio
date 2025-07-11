@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  /*=============== Colors ===============*/
+  --color-background: oklch(14.5% 0 0);
+  --color-foreground: oklch(98.5% 0 0);
+  --color-ard: oklch(20.5% 0 0);
+  --color-card-foreground: oklch(98.5% 0 0);
+  --color-popover: oklch(20.5% 0 0);
+  --color-popover-foreground: oklch(98.5% 0 0);
+  --color-primary: oklch(92.2% 0 0);
+  --color-primary-foreground: oklch(20.5% 0 0);
+  --color-secondary: oklch(26.9% 0 0);
+  --color-secondary-foreground: oklch(98.5% 0 0);
+  --color-muted: oklch(26.9% 0 0);
+  --color-muted-foreground: oklch(70.8% 0 0);
+  --color-accent: oklch(26.9% 0 0);
+  --color-accent-foreground: oklch(98.5% 0 0);
+  --color-destructive: oklch(70.4% 0.191 22.216);
+  --color-border: oklch(100% 0 0 / 0.1);
+  --color-input: oklch(100% 0 0 / 0.15);
+  --color-ring: oklch(55.6% 0 0);
+  --color-chart-1: oklch(48.8% 0.243 264.376);
+  --color-chart-2: oklch(69.6% 0.17 162.48);
+  --color-chart-3: oklch(76.9% 0.188 70.08);
+  --color-chart-4: oklch(62.7% 0.265 303.9);
+  --color-chart-5: oklch(64.5% 0.246 16.439);
+  --color-sidebar: oklch(20.5% 0 0);
+  --color-sidebar-foreground: oklch(98.5% 0 0);
+  --color-sidebar-primary: oklch(48.8% 0.243 264.376);
+  --color-sidebar-primary-foreground: oklch(98.5% 0 0);
+  --color-sidebar-accent: oklch(26.9% 0 0);
+  --color-sidebar-accent-foreground: oklch(98.5% 0 0);
+  --color-sidebar-border: oklch(100% 0 0 / 0.1);
+  --color-sidebar-ring: oklch(55.6% 0 0);
+
+  /*=============== Fonts ===============*/
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-dancing: "Dancing Script", cursive;
+  --font-caveat: "Caveat", cursive;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+body {
+  @apply bg-ard tracking-tight text-foreground font-montserrat;
+}
+
+section {
+  @apply border-b border-zinc-600 border-dashed px-4;
+}
+
+#info-dot {
+  animation: pulseOpacity 2s infinite;
+}
+
+::-webkit-scrollbar {
+  @apply size-2.5;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-sidebar-ring;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-input;
+}
+
+/*========== Animations ==========*/
+@keyframes pulseOpacity {
+  0% {
+    box-shadow: 0 0 0 0px rgba(67, 238, 67, 0.707);
+  }
+
+  100% {
+    box-shadow: 0 0 0 6px rgba(0, 128, 0, 0);
+  }
+}
