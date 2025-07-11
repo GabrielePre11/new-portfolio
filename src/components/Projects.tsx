@@ -46,7 +46,7 @@ export default function Projects() {
           ))}
         </ul>
 
-        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
           {projects
             .filter((project) =>
               activeCategory === "Tutti"
