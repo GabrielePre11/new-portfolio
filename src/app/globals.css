@@ -60,6 +60,10 @@ section {
   animation: pulseOpacity 2s infinite;
 }
 
+#succeed-msg {
+  animation: pulseOpacitySucceed 2s infinite;
+}
+
 ::-webkit-scrollbar {
   @apply size-2.5;
 }
@@ -80,5 +84,15 @@ section {
 
   100% {
     box-shadow: 0 0 0 6px rgba(0, 128, 0, 0);
+  }
+}
+
+@keyframes pulseOpacitySucceed {
+  0% {
+    box-shadow: 0 0 0 0px rgba(155, 158, 155, 0.707);
+  }
+
+  100% {
+    box-shadow: 0 0 0 8px rgba(0, 128, 0, 0);
   }
 }
