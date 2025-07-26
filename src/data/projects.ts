@@ -1,4 +1,5 @@
 // Projects Images
+import gameshelfImage from "@/assets/images/projects/gameshelf.png";
 import recipeImage from "@/assets/images/projects/recipe-app.png";
 import angularBrowser from "@/assets/images/projects/angular-browser.png";
 import angularQuiz from "@/assets/images/projects/angular-quiz.png";
@@ -27,8 +28,25 @@ import TypeScriptIcon from "@/assets/images/projects/Icons/TypeScript.png";
 import TailwindCSSIcon from "@/assets/images/projects/Icons/Tailwind CSS.png";
 import ZustandIcon from "@/assets/images/projects/Icons/Zustand.svg";
 import FramerMotion from "@/assets/images/projects/Icons/FramerMotion.svg";
+import Redux from "@/assets/images/projects/Icons/Redux.png";
 
 export const projects = [
+  {
+    src: gameshelfImage,
+    title: "GameShelf",
+    description:
+      "Una libreria di giochi sviluppata con Next.js, TypeScript, TailwindCSS e Redux Toolkit. Gli utenti possono esplorare un'ampia gamma di giochi, cercarli e filtrarli, visualizzare pagine dettagliate e gestire la propria lista dei preferiti con facilità.",
+    category: "Next.js",
+    technologies: [
+      { name: "Next.js", src: ReactIcon },
+      { name: "TypeScript", src: TypeScriptIcon },
+      { name: "TailwindCSS", src: TailwindCSSIcon },
+      { name: "Redux Toolkit", src: Redux },
+    ],
+    gitHubLink: "https://github.com/GabrielePre11/nextjs-gameshelf",
+    demo: "https://nextjs-gameshelf.vercel.app/",
+  },
+
   {
     src: recipeImage,
     title: "Recipes App",
