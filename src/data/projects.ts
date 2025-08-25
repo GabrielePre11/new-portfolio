@@ -1,4 +1,5 @@
 // Projects Images
+import mernReadlyApp from "@/assets/images/projects/MERNReadlyApp.png";
 import gameshelfImage from "@/assets/images/projects/gameshelf.png";
 import recipeImage from "@/assets/images/projects/recipe-app.png";
 import angularBrowser from "@/assets/images/projects/angular-browser.png";
@@ -29,8 +30,28 @@ import TailwindCSSIcon from "@/assets/images/projects/Icons/Tailwind CSS.png";
 import ZustandIcon from "@/assets/images/projects/Icons/Zustand.svg";
 import FramerMotion from "@/assets/images/projects/Icons/FramerMotion.svg";
 import Redux from "@/assets/images/projects/Icons/Redux.png";
+import MongoDB from "@/assets/images/projects/Icons/MongoDB.png";
+import Express from "@/assets/images/projects/Icons/Express.png";
 
 export const projects = [
+  {
+    src: mernReadlyApp,
+    title: "MERN - Readly",
+    description:
+      "Readly è un'app web MERN che consente agli utenti di sfogliare, cercare e filtrare centinaia di libri, consentendo al contempo agli amministratori di aggiungere, aggiornare ed eliminare libri facilmente.",
+    category: "React",
+    technologies: [
+      { name: "MongoDB", src: MongoDB },
+      { name: "Express", src: Express },
+      { name: "React", src: ReactIcon },
+      { name: "TypeScript", src: TypeScriptIcon },
+      { name: "TailwindCSS", src: TailwindCSSIcon },
+      { name: "Zustand", src: ZustandIcon },
+    ],
+    gitHubLink: "https://github.com/GabrielePre11/mern-readly",
+    demo: "https://mern-readly.onrender.com/",
+  },
+
   {
     src: gameshelfImage,
     title: "GameShelf",
