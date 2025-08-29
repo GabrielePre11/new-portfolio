@@ -46,10 +46,13 @@ export default function Hero() {
 
         {/*=============== What do I do? ===============*/}
         <p className="text-sm sm:text-[1rem] text-muted-foreground max-w-3xl pt-5">
-          Sono uno sviluppatore front-end junior autodidatta di 21 anni a cui
-          piace creare interfacce utente pulite e moderne. Lavoro principalmente
-          con React, TypeScript e TailwindCSS e ho una conoscenza di base di
-          Angular.
+          Jr. Front-End Developer autodidatta, appassionato di sviluppo web e
+          design moderno. Lavoro principalmente con <strong>React</strong>,
+          <strong>Next.js</strong>, <strong>TypeScript</strong>,{" "}
+          <strong>TailwindCSS</strong> e <strong>Zustand/Redux</strong> per lo
+          state management. Sono curioso e determinato, sempre alla ricerca di
+          nuove sfide per crescere come sviluppatore e creare interfacce pulite
+          e funzionali.
         </p>
 
         {/*=============== Buttons ===============*/}
