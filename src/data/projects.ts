@@ -39,7 +39,7 @@ export const projects = [
     title: "MERN - Readly",
     description:
       "Readly è un'app web MERN che consente agli utenti di sfogliare, cercare e filtrare centinaia di libri, consentendo al contempo agli amministratori di aggiungere, aggiornare ed eliminare libri facilmente.",
-    category: "React",
+    category: "Full Stack",
     technologies: [
       { name: "MongoDB", src: MongoDB },
       { name: "Express", src: Express },

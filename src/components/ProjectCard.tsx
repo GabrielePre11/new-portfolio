@@ -88,7 +88,7 @@ export default function ProjectCard({
           </div>
 
           {/*=============== Description ===============*/}
-          <p className="text-sm tracking-wide text-muted-foreground  line-clamp-4">
+          <p className="text-sm tracking-wide text-muted-foreground line-clamp-4">
             {projectDesc}
           </p>
 

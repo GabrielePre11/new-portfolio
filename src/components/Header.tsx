@@ -23,11 +23,12 @@ export default function Header() {
         <div className="flex items-center gap-2">
           {/*=============== CV Button ===============*/}
           <a
-            href="/GabrielePrestanoCV.pdf"
+            href="/Gabriele-Prestano-CV.pdf"
             download
+            role="button"
             className="flex items-center gap-1.5 bg-accent py-1 px-3 text-foreground border border-border rounded-xl transition-colors duration-300 hover:bg-accent/60 cursor-pointer"
           >
-            <span>
+            <span aria-hidden="true">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -94,7 +95,12 @@ export default function Header() {
           </button>
 
           {/*=============== Menu Component ===============*/}
-          <div className="absolute">
+          <div
+            className="absolute"
+            aria-expanded={isMenuOpen}
+            aria-hidden={!isMenuOpen}
+            aria-live="polite"
+          >
             {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
           </div>
         </div>

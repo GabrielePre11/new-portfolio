@@ -40,16 +40,16 @@
   --font-caveat: "Caveat", cursive;
 }
 
+body {
+  @apply bg-ard tracking-tight text-foreground font-montserrat overflow-x-hidden;
+}
+
 html {
   @apply scroll-smooth;
 }
 
 button {
   @apply cursor-pointer;
-}
-
-body {
-  @apply bg-ard tracking-tight text-foreground font-montserrat overflow-x-hidden;
 }
 
 section {

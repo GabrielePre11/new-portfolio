@@ -16,7 +16,7 @@ export default function Hero() {
               src={Gabriele}
               width={500}
               alt="Gabriele's Pic"
-              loading="lazy"
+              priority
               className="rounded-full border border-border size-36 md:size-40 lg:size-44 shrink-0"
             ></Image>
           </figure>

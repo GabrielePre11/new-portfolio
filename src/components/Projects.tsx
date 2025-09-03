@@ -11,6 +11,7 @@ const categories: Category[] = [
   "HTML & CSS",
   "React",
   "Next.js",
+  "Full Stack",
   "Angular",
 ];
 

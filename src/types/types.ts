@@ -1,7 +1,13 @@
 import { StaticImageData } from "next/image";
 
 // Category
-export type Category = "Tutti" | "HTML & CSS" | "React" | "Next.js" | "Angular";
+export type Category =
+  | "Tutti"
+  | "HTML & CSS"
+  | "React"
+  | "Next.js"
+  | "Full Stack"
+  | "Angular";
 
 // TechsType
 type TechsType = {

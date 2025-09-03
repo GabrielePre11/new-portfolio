@@ -21,7 +21,7 @@ export default function Menu({ setIsMenuOpen }: MenuProps) {
   }, [setIsMenuOpen]);
 
   return (
-    <nav className="absolute top-10">
+    <nav className="absolute top-10" aria-label="Menu">
       <ul className="flex flex-col p-1.5 bg-accent gap-1.5 text-foreground rounded-xl border border-border">
         {navLinks.map((link) => (
           <li
