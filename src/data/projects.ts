@@ -1,4 +1,5 @@
 // Projects Images
+import angularPantoEcommerce from "@/assets/images/projects/angular-panto-ecommerce.png";
 import mernReadlyApp from "@/assets/images/projects/MERNReadlyApp.png";
 import gameshelfImage from "@/assets/images/projects/gameshelf.png";
 import recipeImage from "@/assets/images/projects/recipe-app.png";
@@ -34,6 +35,21 @@ import MongoDB from "@/assets/images/projects/Icons/MongoDB.png";
 import Express from "@/assets/images/projects/Icons/Express.png";
 
 export const projects = [
+  {
+    src: angularPantoEcommerce,
+    title: "Panto - Ecommerce",
+    description:
+      "Panto è un moderno e responsive frontend per l'e-commerce di mobili, realizzato con Angular 20, TypeScript, Tailwind CSS, NgRx e PrimeNG. Permette agli utenti di navigare, cercare e filtrare un ampio catalogo di mobili, nonché di salvare gli articoli nella lista dei desideri o nel carrello.",
+    category: "Angular",
+    technologies: [
+      { name: "Angular", src: AngularIcon },
+      { name: "TypeScript", src: TypeScriptIcon },
+      { name: "TailwindCSS", src: TailwindCSSIcon },
+    ],
+    gitHubLink: "https://github.com/GabrielePre11/angular-panto-ecommerce",
+    demo: "https://angular-panto-ecommerce.vercel.app/",
+  },
+
   {
     src: mernReadlyApp,
     title: "MERN - Readly",
