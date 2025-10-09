@@ -22,8 +22,8 @@ export default function LanguageProvider({
   // By default the language is Italian
   const [locale, setLocale] = useState<Languages>("it");
 
-  // ⚠️ Messages type is any because I don't know how to define them;
-  const [messages, setMessages] = useState<any>(null);
+  // ⚠️ Messages type is unknown because I don't know how to define them;
+  const [messages, setMessages] = useState<unknown>(null);
 
   useEffect(() => {
     // Function to import the messages for the selected language, and

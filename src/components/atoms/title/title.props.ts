@@ -1,3 +1,3 @@
-type TitleProps = {
+export type TitleProps = {
   title: string;
 };

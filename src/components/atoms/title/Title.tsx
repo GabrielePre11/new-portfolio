@@ -1,4 +1,5 @@
 import React from "react";
+import { TitleProps } from "./title.props";
 
 export default function Title({ title }: TitleProps) {
   return (
