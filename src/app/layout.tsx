@@ -13,8 +13,9 @@ import {
 import "./globals.css";
 
 //=============== Components ===============//
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/organisms/header/Header";
+import Footer from "@/components/organisms/footer/Footer";
+import LanguageProvider from "@/components/providers/LanguageProvider";
 
 //=============== Fonts Configuration ===============//
 const geistSans = Geist({
@@ -87,11 +88,13 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${dancingScript.variable} ${caveat.variable} antialiased`}
       >
-        <Header />
-        <main className="border-b border-dashed border-zinc-600">
-          {children}
-        </main>
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          <main className="border-b border-dashed border-zinc-600">
+            {children}
+          </main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

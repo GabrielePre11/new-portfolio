@@ -1,12 +1,6 @@
-import Container from "@/layout/Container";
+import Container from "@/components/templates/container/Container";
 import React, { useEffect, useState } from "react";
-
-type SucceedProps = {
-  state: {
-    submitting: boolean;
-    succeeded: boolean;
-  };
-};
+import { SucceedProps } from "./suceed.props";
 
 export default function Suceed({ state }: SucceedProps) {
   const [showModal, setShowModal] = useState(false);

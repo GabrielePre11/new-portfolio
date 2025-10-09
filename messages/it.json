@@ -1,0 +1,119 @@
+{
+  "header_menu": {
+    "education": "Formazione",
+    "projects": "Progetti"
+  },
+
+  "hero_section": {
+    "info": "Aperto a nuove oppurtunità",
+    "firstname": "Gabriele Prestano",
+    "role": "Junior Front End Developer",
+    "description": "Jr. Front-End Developer autodidatta, appassionato di sviluppo web e design moderno. Lavoro principalmente con <strong>React</strong>, <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>TailwindCSS</strong> e <strong>Zustand/Redux</strong> per lo state management. Sono curioso e determinato, sempre alla ricerca di nuove sfide per crescere come sviluppatore e creare interfacce pulite e funzionali.",
+    "contact-me-button": "Contattami"
+  },
+
+  "tecnologies_section": {
+    "title": "Le tecnologie che uso"
+  },
+
+  "education_section": {
+    "title": "Educazione e Formazione"
+  },
+
+  "education_cards": {
+    "school": {
+      "name": "Istituto Superiore Majorana",
+      "subtitle": "Diploma di Perito Informatico",
+      "topics": [
+        "Studio del linguaggio di programmazione Java;",
+        "Studio e realizzazione di un progetto di classe con il database mySQL;",
+        "Studio e realizzazione di un progetto scolastico con Joomla."
+      ]
+    },
+    "udemy": {
+      "name": "Udemy",
+      "subtitle": "JavaScript - La guida completa",
+      "topics": [
+        "Approfondimento di JavaScript;",
+        "Breve introduzione a Node.js ed Express;",
+        "Introduzione a TypeScript, React;",
+        "Breve introduzione ad Angular;",
+        "Introduzione al gestore di pacchetti npm."
+      ]
+    }
+  },
+
+  "projects_section": {
+    "title": "I miei progetti",
+    "categories": {
+      "all": "Tutti"
+    },
+    "list": {
+      "angularPantoEcommerce": {
+        "description": "Panto è un moderno e responsive frontend per l'e-commerce di mobili, realizzato con Angular 20, TypeScript, Tailwind CSS, NgRx e PrimeNG. Permette agli utenti di navigare, cercare e filtrare un ampio catalogo di mobili, nonché di salvare gli articoli nella lista dei desideri o nel carrello."
+      },
+      "mernReadlyApp": {
+        "description": "Readly è un'app web MERN che consente agli utenti di sfogliare, cercare e filtrare centinaia di libri, consentendo al contempo agli amministratori di aggiungere, aggiornare ed eliminare libri facilmente."
+      },
+      "nextjsGameshelf": {
+        "description": "Una libreria di giochi sviluppata con Next.js, TypeScript, TailwindCSS e Redux Toolkit. Gli utenti possono esplorare un'ampia gamma di giochi, cercarli e filtrarli, visualizzare pagine dettagliate e gestire la propria lista dei preferiti con facilità."
+      },
+      "reactRecipesApp": {
+        "description": "Un'app di ricette moderna e reattiva, sviluppata con React, TypeScript, TailwindCSS, Zustand e React Router. Gli utenti possono esplorare un'ampia gamma di ricette, cercarle e filtrarle, visualizzare pagine dettagliate e gestire la propria lista dei preferiti con facilità."
+      },
+      "angularBrowserExtension": {
+        "description": "Gestore di estensioni browser, realizzato con Angular 20. 🎯 Un progetto personale inizialmente creato in React ricreato in Angular per testare signals, input()/output() e localStorage()."
+      },
+      "angularQuizApp": {
+        "description": "Un'app di quiz semplice e interattiva, sviluppata utilizzando Angular 20 e Sass (SCSS). Permette agli utenti di rispondere a una serie di domande, monitorare i propri progressi e visualizzare il punteggio in tempo reale."
+      },
+      "angularTodoList": {
+        "description": "Una lista di cose da fare semplice e moderna, creata con Angular, per mettere in pratica i fondamenti del framework. Gli utenti possono eseguire azioni di base come aggiungere, completare, rimuovere e filtrare attività."
+      },
+      "nextjsExclusive": {
+        "description": "Exclusive è un progetto e-commerce moderno e minimale, sviluppato con Next.js (React), TypeScript, TailwindCSS e Zustand per la gestione dello stato globale. Questo progetto mi ha dato una grande mano a capire meglio il funzionamento di Zustand, fare progressi in Next JS, e migliorare le mie skills in TypeScript e TailwindCSS."
+      },
+      "nextjsCineRadar": {
+        "description": "CineRadar è una libreria di film e serie TV sviluppata con Next.js 15. Permette agli utenti di esplorare migliaia di titoli, visualizzare i dettagli completi e salvare i preferiti in locale. È il mio primo progetto con NextJS, che mi ha anche introdotto a Zustand."
+      },
+      "reactDragonBall": {
+        "description": "Come primo progetto per testare la libreria React Router, ho sviluppato una semplice web app dedicata ai personaggi del celebre anime Dragon Ball, un cartone che amavo da bambino."
+      },
+      "reactQuizApp": {
+        "description": "Una Quiz App sviluppata in React, TypeScript e TailwindCSS v4, con un totale di 10 domande e 4 opzioni disponibili per ogni domanda!"
+      },
+      "reactOldPortfolio": {
+        "description": "Come secondo progetto di React ho voluto creare un portfolio personale, che mi ha permesso di migliorare le mie competenze di base di React, e di imparare le basi di Framer Motion per creare delle animazioni semplici."
+      },
+      "reactWeatherApp": {
+        "description": "Una semplice App Meteo creata in React, TypeScript e Tailwind CSS v4. Le API sono fornite da OpenWeatherMap."
+      },
+      "reactTodoList": {
+        "description": "Una moderna To-Do List creata con React, Vite, TypeScript e TailwindCSS v4, che permette l'aggiunta di nuove attività, l'eliminazione delle attività e il salvataggio con localStorage."
+      },
+      "reactEducity": {
+        "description": "Educity è una replica di un sito educativo sviluppata con React e Vite come mio primo progetto, il che mi ha permesso di mettere in pratica i concetti di base di React, esplorare l'uso degli hooks principali (useState, useEffect e useRef) e di esplorare altre funzionalità."
+      },
+      "htmlVehiclesForm": {
+        "description": "Un Form realizzato con HTML, CSS e TypeScript in cui l'utente può aggiungere dei veicoli inserendo varie informazioni tramite i campi di input."
+      },
+      "htmlRockPaperScissors": {
+        "description": "Un semplice emulatore del classico gioco 'Rock Paper Scissors', realizzato con HTML, CSS e JavaScript. Il giocatore sfida la CPU scegliendo tra sasso, carta o forbici, con punteggio aggiornato in tempo reale. La partita termina al raggiungimento di 5 punti."
+      },
+      "htmlMusicPlayer": {
+        "description": "Un semplice Music Player in cui l'utente può far partire e stoppare una canzone, cliccare il tasto 'Like' e utilizzare altri comandi."
+      }
+    }
+  },
+
+  "contact": {
+    "title": "Contattami",
+    "form": {
+      "name-placeholder": "Nome dell'azienda",
+      "email-placeholder": "nomeazienda@email.com",
+      "message-placeholder": "Il tuo messaggio",
+      "isSubmitting:": "Invio in corso...",
+      "submit": "Invia messaggio"
+    }
+  }
+}

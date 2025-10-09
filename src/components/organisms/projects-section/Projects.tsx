@@ -1,21 +1,19 @@
 "use client";
 
-import Container from "@/layout/Container";
+import Container from "@/components/templates/container/Container";
 import React, { useState } from "react";
-import ProjectCard from "./ProjectCard";
 import { projects } from "@/data/projects";
 import type { Category } from "@/types/types";
-
-const categories: Category[] = [
-  "Tutti",
-  "HTML & CSS",
-  "React",
-  "Next.js",
-  "Full Stack",
-  "Angular",
-];
+import { useTranslations } from "next-intl";
+import Title from "@/components/atoms/title/Title";
+import ProjectCard from "@/components/molecules/project-card/ProjectCard";
+import { categories } from "./projects.categories";
 
 export default function Projects() {
+  const t = useTranslations("projects_section");
+  const tAll = useTranslations("projects_section.categories");
+  const tList = useTranslations("projects_section.list");
+
   const [activeCategory, setActiveCategory] = useState<Category>("Tutti");
 
   return (
@@ -25,12 +23,10 @@ export default function Projects() {
       aria-label="Projects Section"
     >
       <Container className="border-x border-zinc-600 border-dashed py-10">
-        <div className="flex items-center justify-center pb-12">
-          <h2 className="text-4xl md:text-5xl font-caveat">Progetti</h2>
-        </div>
+        <Title title={t("title")} />
 
         {/*=============== Filters ===============*/}
-        <ul className="flex flex-wrap items-center gap-5 justify-center pb-10">
+        <ul className="flex flex-wrap items-center gap-5 justify-center py-10">
           {categories.map((category, index) => (
             <li key={index}>
               <button
@@ -41,7 +37,7 @@ export default function Projects() {
                 }`}
                 onClick={() => setActiveCategory(category)}
               >
-                {category}
+                {category === "Tutti" ? tAll("all") : category}
               </button>
             </li>
           ))}
@@ -60,7 +56,7 @@ export default function Projects() {
                 key={project.title}
                 projectImage={project.src}
                 projectTitle={project.title}
-                projectDesc={project.description}
+                projectDesc={tList(`${project.descriptionKey}.description`)}
                 projectTechs={project.technologies}
                 projectGitHub={project.gitHubLink}
                 projectDemo={project.demo}

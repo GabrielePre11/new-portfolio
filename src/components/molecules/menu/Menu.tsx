@@ -1,16 +1,16 @@
 "use client";
 import React, { useEffect } from "react";
-
-const navLinks = [
-  { name: "Education", href: "#education" },
-  { name: "Projects", href: "#projects" },
-];
-
-type MenuProps = {
-  setIsMenuOpen: (value: boolean) => void;
-};
+import { useTranslations } from "use-intl";
+import { MenuProps } from "./menu.props";
 
 export default function Menu({ setIsMenuOpen }: MenuProps) {
+  const t = useTranslations("header_menu");
+
+  const navLinks = [
+    { name: t("education"), href: "#education" },
+    { name: t("projects"), href: "#projects" },
+  ];
+
   useEffect(() => {
     const closeMenuOnScroll = () => {
       setIsMenuOpen(false);
@@ -21,7 +21,7 @@ export default function Menu({ setIsMenuOpen }: MenuProps) {
   }, [setIsMenuOpen]);
 
   return (
-    <nav className="absolute top-10" aria-label="Menu">
+    <nav className="absolute top-10 -right-35" aria-label="Menu">
       <ul className="flex flex-col p-1.5 bg-accent gap-1.5 text-foreground rounded-xl border border-border">
         {navLinks.map((link) => (
           <li

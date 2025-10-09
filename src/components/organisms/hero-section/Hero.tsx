@@ -1,11 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 
 import Gabriele from "@/assets/GP-Photo.png";
-import Container from "@/layout/Container";
+import Container from "@/components/templates/container/Container";
 import { networks } from "@/data/networks";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+  const t = useTranslations("hero_section");
+
   return (
     <section id="hero" aria-label="Hero Section">
       <Container className="grid grid-cols-1 gap-5 border-x border-zinc-600 border-dashed py-10">
@@ -29,30 +34,24 @@ export default function Hero() {
                 id="info-dot"
                 className="size-2.5 bg-green-500 rounded-full"
               ></div>
-              Aperto a nuove oppurtunità
+              {t("info")}
             </span>
 
             {/*=============== Firstname & Lastname ===============*/}
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-caveat">
-              Gabriele Prestano
+              {t("firstname")}
             </h2>
 
             {/*=============== Role ===============*/}
-            <h3 className="text-lg sm:text-xl md:text-2xl">
-              Junior Front End Developer
-            </h3>
+            <h3 className="text-lg sm:text-xl md:text-2xl">{t("role")}</h3>
           </div>
         </div>
 
         {/*=============== What do I do? ===============*/}
         <p className="text-sm sm:text-[1rem] text-muted-foreground max-w-3xl pt-5">
-          Jr. Front-End Developer autodidatta, appassionato di sviluppo web e
-          design moderno. Lavoro principalmente con <strong>React</strong>,
-          <strong>Next.js</strong>, <strong>TypeScript</strong>,{" "}
-          <strong>TailwindCSS</strong> e <strong>Zustand/Redux</strong> per lo
-          state management. Sono curioso e determinato, sempre alla ricerca di
-          nuove sfide per crescere come sviluppatore e creare interfacce pulite
-          e funzionali.
+          {t.rich("description", {
+            strong: (chunks) => <strong>{chunks}</strong>,
+          })}
         </p>
 
         {/*=============== Buttons ===============*/}
@@ -95,7 +94,7 @@ export default function Hero() {
                 <path d="m21.854 2.147-10.94 10.939" />
               </svg>
             </span>
-            Contattami
+            {t("contact-me-button")}
           </a>
         </div>
       </Container>

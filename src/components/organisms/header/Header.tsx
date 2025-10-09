@@ -1,12 +1,14 @@
 "use client";
 
-import Container from "@/layout/Container";
+import Container from "@/components/templates/container/Container";
 import React, { useState } from "react";
-import Menu from "./Menu";
 import Link from "next/link";
+import Menu from "@/components/molecules/menu/Menu";
+import LanguageMenu from "@/components/molecules/language-menu/LanguageMenu";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState<boolean>(false);
 
   return (
     <header
@@ -23,7 +25,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           {/*=============== CV Button ===============*/}
           <a
-            href="/Gabriele-Prestano-CV.pdf"
+            href="/CV_Gabriele_Prestano.pdf"
             download
             role="button"
             className="flex items-center gap-1.5 bg-accent py-1 px-3 text-foreground border border-border rounded-xl transition-colors duration-300 hover:bg-accent/60 cursor-pointer"
@@ -49,6 +51,39 @@ export default function Header() {
             CV
           </a>
 
+          {/*=============== Language Menu Icon ===============*/}
+          <button
+            className={`relative grid place-items-center p-1.5 rounded-xl transition-colors duration-200 hover:bg-border ${
+              isLanguageMenuOpen ? "bg-border" : "bg-transparent"
+            }`}
+            aria-label="Language Menu Icon"
+            aria-live="polite"
+            onClick={() => {
+              setIsLanguageMenuOpen((prev) => !prev);
+              setIsMenuOpen(false);
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-languages-icon lucide-languages"
+            >
+              <path d="m5 8 6 6" />
+              <path d="m4 14 6-6 2-3" />
+              <path d="M2 5h12" />
+              <path d="M7 2h1" />
+              <path d="m22 22-5-10-5 10" />
+              <path d="M14 18h6" />
+            </svg>
+          </button>
+
           {/*=============== Menu Icon ===============*/}
           <button
             className={`relative grid place-items-center p-1.5 rounded-xl transition-colors duration-200 hover:bg-border ${
@@ -56,7 +91,10 @@ export default function Header() {
             }`}
             aria-label="Menu Icon"
             aria-live="polite"
-            onClick={() => setIsMenuOpen((prev) => !prev)}
+            onClick={() => {
+              setIsMenuOpen((prev) => !prev);
+              setIsLanguageMenuOpen(false);
+            }}
           >
             {isMenuOpen ? (
               <svg
@@ -102,6 +140,18 @@ export default function Header() {
             aria-live="polite"
           >
             {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
+          </div>
+
+          {/* =============== Language Component =============== */}
+          <div
+            className="absolute"
+            aria-expanded={isLanguageMenuOpen}
+            aria-hidden={!isLanguageMenuOpen}
+            aria-live="polite"
+          >
+            {isLanguageMenuOpen && (
+              <LanguageMenu setIsLanguageMenuOpen={setIsLanguageMenuOpen} />
+            )}
           </div>
         </div>
       </Container>

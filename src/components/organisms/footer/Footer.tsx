@@ -1,4 +1,4 @@
-import Container from "@/layout/Container";
+import Container from "@/components/templates/container/Container";
 import React from "react";
 import { networks } from "@/data/networks";
 

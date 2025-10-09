@@ -1,0 +1,119 @@
+{
+  "header_menu": {
+    "education": "Education",
+    "projects": "Projects"
+  },
+
+  "hero_section": {
+    "info": "Open to new opportunities",
+    "firstname": "Gabriele Prestano",
+    "role": "Junior Front End Developer",
+    "description": "Self-taught Jr. Front-End Developer, passionate about web development and modern design. I mainly work with <strong>React</strong>, <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>TailwindCSS</strong>, and <strong>Zustand/Redux</strong> for state management. I’m curious and determined, always seeking new challenges to grow as a developer and create clean and functional interfaces.",
+    "contact-me-button": "Contact Me"
+  },
+
+  "tecnologies_section": {
+    "title": "Technologies I Use"
+  },
+
+  "education_section": {
+    "title": "Education & Training"
+  },
+
+  "education_cards": {
+    "school": {
+      "name": "Istituto Superiore Majorana",
+      "subtitle": "Diploma in Computer Science",
+      "topics": [
+        "Studied the Java programming language;",
+        "Studied and developed a class project with MySQL database;",
+        "Studied and created a school project with Joomla."
+      ]
+    },
+    "udemy": {
+      "name": "Udemy",
+      "subtitle": "JavaScript - The Complete Guide",
+      "topics": [
+        "Deepened knowledge of JavaScript;",
+        "Brief introduction to Node.js and Express;",
+        "Introduction to TypeScript and React;",
+        "Brief introduction to Angular;",
+        "Introduction to npm package manager."
+      ]
+    }
+  },
+
+  "projects_section": {
+    "title": "My Projects",
+    "categories": {
+      "all": "All"
+    },
+    "list": {
+      "angularPantoEcommerce": {
+        "description": "Panto is a modern and responsive frontend for a furniture e-commerce, built with Angular 20, TypeScript, Tailwind CSS, NgRx, and PrimeNG. It allows users to browse, search, and filter a large furniture catalog, as well as save items to the wishlist or cart."
+      },
+      "mernReadlyApp": {
+        "description": "Readly is a MERN web app that allows users to browse, search, and filter hundreds of books, while admins can easily add, update, and delete books."
+      },
+      "nextjsGameshelf": {
+        "description": "A game library built with Next.js, TypeScript, TailwindCSS, and Redux Toolkit. Users can explore a wide range of games, search and filter them, view detailed pages, and manage their favorites list."
+      },
+      "reactRecipesApp": {
+        "description": "A modern and responsive recipe app built with React, TypeScript, TailwindCSS, Zustand, and React Router. Users can explore, search, and filter recipes, view detailed pages, and manage their favorites list."
+      },
+      "angularBrowserExtension": {
+        "description": "Browser extension manager built with Angular 20. 🎯 A personal project initially created in React and recreated in Angular to test signals, input()/output(), and localStorage()."
+      },
+      "angularQuizApp": {
+        "description": "A simple and interactive quiz app built with Angular 20 and Sass (SCSS). Users can answer a series of questions, track their progress, and view real-time scores."
+      },
+      "angularTodoList": {
+        "description": "A simple and modern To-Do List built with Angular, to practice the basics of the framework. Users can add, complete, remove, and filter tasks."
+      },
+      "nextjsExclusive": {
+        "description": "Exclusive is a modern and minimal e-commerce project built with Next.js (React), TypeScript, TailwindCSS, and Zustand for global state management. This project helped me understand Zustand better, improve in Next.js, and enhance my TypeScript and TailwindCSS skills."
+      },
+      "nextjsCineRadar": {
+        "description": "CineRadar is a movie and TV series library built with Next.js 15. Users can explore thousands of titles, view full details, and save favorites locally. It's my first NextJS project and also introduced me to Zustand."
+      },
+      "reactDragonBall": {
+        "description": "As my first project testing React Router, I developed a simple web app dedicated to the characters of the famous anime Dragon Ball, a show I loved as a child."
+      },
+      "reactQuizApp": {
+        "description": "A Quiz App built with React, TypeScript, and TailwindCSS v4, with 10 questions and 4 options available for each question!"
+      },
+      "reactOldPortfolio": {
+        "description": "As my second React project, I created a personal portfolio, which allowed me to improve my basic React skills and learn the basics of Framer Motion for simple animations."
+      },
+      "reactWeatherApp": {
+        "description": "A simple Weather App built with React, TypeScript, and Tailwind CSS v4. APIs are provided by OpenWeatherMap."
+      },
+      "reactTodoList": {
+        "description": "A modern To-Do List built with React, Vite, TypeScript, and TailwindCSS v4, allowing users to add new tasks, delete tasks, and save them with localStorage."
+      },
+      "reactEducity": {
+        "description": "Educity is a replica of an educational site built with React and Vite as my first project, allowing me to practice basic React concepts, explore main hooks (useState, useEffect, and useRef), and experiment with other functionalities."
+      },
+      "htmlVehiclesForm": {
+        "description": "A form built with HTML, CSS, and TypeScript where users can add vehicles by filling in various input fields."
+      },
+      "htmlRockPaperScissors": {
+        "description": "A simple emulator of the classic game 'Rock Paper Scissors', built with HTML, CSS, and JavaScript. The player competes against the CPU, choosing rock, paper, or scissors, with real-time score updates. The game ends when a player reaches 5 points."
+      },
+      "htmlMusicPlayer": {
+        "description": "A simple Music Player where users can play and stop a song, click the 'Like' button, and use other controls."
+      }
+    }
+  },
+
+  "contact": {
+    "title": "Contact Me",
+    "form": {
+      "name-placeholder": "Company Name",
+      "email-placeholder": "company@email.com",
+      "message-placeholder": "Your message",
+      "isSubmitting:": "Sending message...",
+      "submit": "Send Message"
+    }
+  }
+}

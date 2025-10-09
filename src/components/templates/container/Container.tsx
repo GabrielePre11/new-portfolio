@@ -1,9 +1,5 @@
 import React from "react";
-
-type ContainerProps = {
-  children: React.ReactNode;
-  className?: string;
-};
+import { ContainerProps } from "./container.props";
 
 export default function Container({
   children,

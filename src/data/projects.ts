@@ -38,8 +38,7 @@ export const projects = [
   {
     src: angularPantoEcommerce,
     title: "Panto - Ecommerce",
-    description:
-      "Panto è un moderno e responsive frontend per l'e-commerce di mobili, realizzato con Angular 20, TypeScript, Tailwind CSS, NgRx e PrimeNG. Permette agli utenti di navigare, cercare e filtrare un ampio catalogo di mobili, nonché di salvare gli articoli nella lista dei desideri o nel carrello.",
+    descriptionKey: "angularPantoEcommerce",
     category: "Angular",
     technologies: [
       { name: "Angular", src: AngularIcon },
@@ -53,8 +52,7 @@ export const projects = [
   {
     src: mernReadlyApp,
     title: "MERN - Readly",
-    description:
-      "Readly è un'app web MERN che consente agli utenti di sfogliare, cercare e filtrare centinaia di libri, consentendo al contempo agli amministratori di aggiungere, aggiornare ed eliminare libri facilmente.",
+    descriptionKey: "mernReadlyApp",
     category: "Full Stack",
     technologies: [
       { name: "MongoDB", src: MongoDB },
@@ -71,8 +69,7 @@ export const projects = [
   {
     src: gameshelfImage,
     title: "GameShelf",
-    description:
-      "Una libreria di giochi sviluppata con Next.js, TypeScript, TailwindCSS e Redux Toolkit. Gli utenti possono esplorare un'ampia gamma di giochi, cercarli e filtrarli, visualizzare pagine dettagliate e gestire la propria lista dei preferiti con facilità.",
+    descriptionKey: "nextjsGameshelf",
     category: "Next.js",
     technologies: [
       { name: "Next.js", src: ReactIcon },
@@ -87,8 +84,7 @@ export const projects = [
   {
     src: recipeImage,
     title: "Recipes App",
-    description:
-      "Un'app di ricette moderna e reattiva, sviluppata con React, TypeScript, TailwindCSS, Zustand e React Router. Gli utenti possono esplorare un'ampia gamma di ricette, cercarle e filtrarle, visualizzare pagine dettagliate e gestire la propria lista dei preferiti con facilità.",
+    descriptionKey: "reactRecipesApp",
     category: "React",
     technologies: [
       { name: "React", src: ReactIcon },
@@ -103,8 +99,7 @@ export const projects = [
   {
     src: angularBrowser,
     title: "Angular Browser Extension",
-    description:
-      "Gestore di estensioni browser, realizzato con Angular 20. 🎯 Un progetto personale inizialmente creato in React ricreato in Angular per testare signals, input()/output() e localStorage().",
+    descriptionKey: "angularBrowserExtension",
     category: "Angular",
     technologies: [
       { name: "Angular", src: AngularIcon },
@@ -118,8 +113,7 @@ export const projects = [
   {
     src: angularQuiz,
     title: "Angular Quiz App",
-    description:
-      "Un'app di quiz semplice e interattiva, sviluppata utilizzando Angular 20 e Sass (SCSS). Permette agli utenti di rispondere a una serie di domande, monitorare i propri progressi e visualizzare il punteggio in tempo reale.",
+    descriptionKey: "angularQuizApp",
     category: "Angular",
     technologies: [
       { name: "Angular", src: AngularIcon },
@@ -133,8 +127,7 @@ export const projects = [
   {
     src: angularToDo,
     title: "Angular To-Do List",
-    description:
-      "Una lista di cose da fare semplice e moderna, creata con Angular, per mettere in pratica i fondamenti del framework. Gli utenti possono eseguire azioni di base come aggiungere, completare, rimuovere e filtrare attività.",
+    descriptionKey: "angularTodoList",
     category: "Angular",
     technologies: [
       { name: "Angular", src: AngularIcon },
@@ -148,8 +141,7 @@ export const projects = [
   {
     src: nextJsExclusive,
     title: "Exclusive",
-    description:
-      "Exclusive è un progetto e-commerce moderno e minimale, sviluppato con Next.js (React), TypeScript, TailwindCSS e Zustand per la gestione dello stato globale. Questo progetto mi ha dato una grande mano a capire meglio il funzionamento di Zustand, fare progressi in Next JS, e migliorare le mie skills in TypeScript e TailwindCSS.",
+    descriptionKey: "nextjsExclusive",
     category: "Next.js",
     technologies: [
       { name: "Next.js", src: NextJsIcon },
@@ -164,8 +156,7 @@ export const projects = [
   {
     src: nextJsCineRadar,
     title: "CineRadar",
-    description:
-      "CineRadar è una libreria di film e serie TV sviluppata con Next.js 15. Permette agli utenti di esplorare migliaia di titoli, visualizzare i dettagli completi e salvare i preferiti in locale. E' il mio primo progetto con NextJS, che mi ha anche introdotto a Zustand.",
+    descriptionKey: "nextjsCineRadar",
     category: "Next.js",
     technologies: [
       { name: "Next.js", src: NextJsIcon },
@@ -180,8 +171,7 @@ export const projects = [
   {
     src: reactDragonBall,
     title: "Dragon Ball",
-    description:
-      "Come primo progetto per testare la libreria React Router, ho sviluppato una semplice web app dedicata ai personaggi del celebre anime Dragon Ball, un cartone che amavo da bambino.",
+    descriptionKey: "reactDragonBall",
     category: "React",
     technologies: [
       { name: "React", src: ReactIcon },
@@ -195,8 +185,7 @@ export const projects = [
   {
     src: reactQuiz,
     title: "Quiz App",
-    description:
-      "Una Quiz App sviluppata in React, TypeScript e TailwindCSS v4, con un totale di 10 domande e 4 opzioni disponibli per ogni domanda!",
+    descriptionKey: "reactQuizApp",
     category: "React",
     technologies: [
       { name: "React", src: ReactIcon },
@@ -210,8 +199,7 @@ export const projects = [
   {
     src: GPOldPortfolio,
     title: "GP Portfolio (Old)",
-    description:
-      "Come secondo progetto di React ho voluto creare un portfolio personale, che mi ha permesso di migliorare le mie competenze di base di React, e di imparare le basi di Framer Motion per creare delle animazioni semplici.",
+    descriptionKey: "reactOldPortfolio",
     category: "React",
     technologies: [
       { name: "React", src: ReactIcon },
@@ -226,8 +214,7 @@ export const projects = [
   {
     src: reactMeteo,
     title: "Weather/Meteo App",
-    description:
-      "Una semplice App Meteo creata in React, TypeScript e Tailwind CSS v4. Le API sono fornite da OpenWeatherMap.",
+    descriptionKey: "reactWeatherApp",
     category: "React",
     technologies: [
       { name: "React", src: ReactIcon },
@@ -241,8 +228,7 @@ export const projects = [
   {
     src: reactToDo,
     title: "To-Do List",
-    description:
-      "Una moderna To-Do List creata con React, Vite, TypeScript e TailwindCSS v4, che permette l'aggiunta di nuove attività, l'eliminazione delle attività e il salvataggio con localStorage",
+    descriptionKey: "reactTodoList",
     category: "React",
     technologies: [
       { name: "React", src: ReactIcon },
@@ -256,8 +242,7 @@ export const projects = [
   {
     src: reactEducity,
     title: "Educity",
-    description:
-      "Educity è una replica di un sito educativo sviluppata con React e Vite come mio primo progetto, il che mi ha permesso di mettere in pratica i concetti di base di React, esplorare l'uso degli hooks principali (useState, useEffect e useRef) e di esplorare altre funzionalità.",
+    descriptionKey: "reactEducity",
     category: "React",
     technologies: [
       { name: "React", src: ReactIcon },
@@ -271,8 +256,7 @@ export const projects = [
   {
     src: htmlFormVehicles,
     title: "Vehicles Form",
-    description:
-      "Un Form realizzato con HTML, CSS e TypeScript in cui l'utente può aggiungere dei veicoli inserendo varie informazioni tramite i campi di input.",
+    descriptionKey: "htmlVehiclesForm",
     category: "HTML & CSS",
     technologies: [
       { name: "HTML", src: HTMLIcon },
@@ -285,8 +269,7 @@ export const projects = [
   {
     src: htmlRockPaperScissors,
     title: "Rock Paper Scissors",
-    description:
-      "Un semplice emulatore del classico gioco 'Rock Paper Scissors', realizzato con HTML, CSS e JavaScript. Il giocatore sfida la CPU scegliendo tra sasso, carta o forbici, con punteggio aggiornato in tempo reale. La partita termina al raggiungimento di 5 punti.",
+    descriptionKey: "htmlRockPaperScissors",
     category: "HTML & CSS",
     technologies: [
       { name: "HTML", src: HTMLIcon },
@@ -299,8 +282,7 @@ export const projects = [
   {
     src: htmlMusicPlayer,
     title: "Music Player",
-    description:
-      "Un semplice Music Player in cui l'utente può far partire e stoppare una canzone, cliccare il tasto 'Like' e utilizzare altri comandi.",
+    descriptionKey: "htmlMusicPlayer",
     category: "HTML & CSS",
     technologies: [
       { name: "HTML", src: HTMLIcon },

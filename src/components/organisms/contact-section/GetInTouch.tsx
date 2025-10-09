@@ -1,11 +1,16 @@
 "use client";
 
-import Container from "@/layout/Container";
+import Container from "@/components/templates/container/Container";
 import React, { useEffect, useRef } from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import Suceed from "./Suceed";
+import { useTranslations } from "next-intl";
+import Title from "@/components/atoms/title/Title";
+import Suceed from "@/components/atoms/suceed-toast/Suceed";
 
 export default function GetInTouch() {
+  const t = useTranslations("contact");
+  const tForm = useTranslations("contact.form");
+
   const [state, handleSubmit] = useForm("mjkogddr");
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -19,15 +24,13 @@ export default function GetInTouch() {
     <section id="contact" aria-label="Get In Touch / Contact Me Section">
       <Container className="grid place-items-center border-x border-zinc-600 border-dashed py-10 overflow-hidden">
         {/*=============== Title ===============*/}
-        <div className="flex items-center justify-center pb-12">
-          <h2 className="text-4xl md:text-5xl font-caveat">Contattami</h2>
-        </div>
+        <Title title={t("title")} />
 
         {/*=============== Form ===============*/}
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="grid grid-cols-1 gap-5 sm:min-w-lg"
+          className="grid grid-cols-1 gap-5 sm:min-w-lg pt-10"
         >
           {/*=============== Name Field ===============*/}
           <input
@@ -36,7 +39,7 @@ export default function GetInTouch() {
             name="agencyName"
             required
             pattern="^[A-Za-zÀ-ÿ\s]+$"
-            placeholder="Nome dell'azienda"
+            placeholder={tForm("name-placeholder")}
             className="border border-input p-3 rounded-xl outline-0 sm:text-lg transition-all duration-200 focus:ring-2 focus:ring-foreground"
           />
 
@@ -47,7 +50,7 @@ export default function GetInTouch() {
             required
             inputMode="email"
             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-            placeholder="nomeazienda@email.com"
+            placeholder={tForm("email-placeholder")}
             className="border border-input p-3 rounded-xl sm:text-lg transition-all duration-200 focus:ring-2 focus:ring-foreground"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
@@ -59,7 +62,7 @@ export default function GetInTouch() {
             required
             minLength={10}
             maxLength={1000}
-            placeholder="Il tuo messaggio..."
+            placeholder={tForm("message-placeholder")}
             className="border border-input p-3 min-h-[130px] rounded-xl sm:text-lg resize-none transition-all duration-200 focus:ring-2 focus:ring-foreground"
           />
           <ValidationError
@@ -85,7 +88,7 @@ export default function GetInTouch() {
           >
             {state.submitting ? (
               <p className="flex items-center gap-2">
-                Invio...
+                {tForm("isSubmitting")}
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +107,7 @@ export default function GetInTouch() {
                 </span>
               </p>
             ) : (
-              "Invia messaggio"
+              <>{tForm("submit")}</>
             )}
           </button>
 

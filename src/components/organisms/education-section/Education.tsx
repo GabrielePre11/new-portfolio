@@ -1,18 +1,22 @@
-import Container from "@/layout/Container";
+"use client";
+
+import Container from "@/components/templates/container/Container";
 import React from "react";
 
-import EducationCard from "./EducationCard";
 import { educationArticles } from "@/data/education";
+import { useTranslations } from "next-intl";
+import Title from "@/components/atoms/title/Title";
+import EducationCard from "@/components/molecules/education-card/EducationCard";
 
 export default function Education() {
+  const t = useTranslations("education_section");
+
   return (
     <section id="education" aria-label="Education Section">
       <Container className="border-x border-zinc-600 border-dashed py-10">
         {/*=============== Title ===============*/}
         <div className="flex items-center justify-center pb-12">
-          <h2 className="text-4xl md:text-5xl font-caveat text-center">
-            Educazione e Formazione
-          </h2>
+          <Title title={t("title")} />
         </div>
 
         {/*=============== Education ===============*/}
