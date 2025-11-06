@@ -41,7 +41,7 @@ export default function LanguageProvider({
   }
 
   return (
-    // It allows every component under the LanguageProvider to access the locale and setLocale functions, but only the LanguageMenu Component can change the locale.
+    // It allows every component under the LanguageProvider to access the locale and setLocale functions.
     <LanguageContext.Provider value={{ locale, setLocale }}>
       {/* The messages are passed to the NextIntlClientProvider */}
       <NextIntlClientProvider locale={locale} messages={messages}>

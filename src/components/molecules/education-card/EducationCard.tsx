@@ -18,7 +18,7 @@ export default function EducationCard({
             <Image
               src={edcImage}
               width={50}
-              alt="Istituto Superiore Majorana Logo"
+              alt={`${edcName}'s logo`}
               loading="lazy"
               className="size-8 sm:size-10 rounded-full object-cover bg-white"
             ></Image>
@@ -35,7 +35,7 @@ export default function EducationCard({
         </p>
 
         {/*===============Topics ===============*/}
-        <ol className="list-disc pl-3.5 text-ring/90 text-sm md:text-[1rem] lg:text-lg space-y-2">
+        <ol className="list-disc pl-3.5 text-muted-foreground/60 text-sm md:text-[1rem] lg:text-lg space-y-2">
           {edcTopics.map((topic, index) => (
             <li key={index}>{topic}</li>
           ))}

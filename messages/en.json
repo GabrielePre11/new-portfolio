@@ -21,25 +21,40 @@
   },
 
   "education_cards": {
-    "school": {
-      "name": "Istituto Superiore Majorana",
-      "subtitle": "Diploma in Computer Science",
-      "topics": [
-        "Studied the Java programming language;",
-        "Studied and developed a class project with MySQL database;",
-        "Studied and created a school project with Joomla."
-      ]
-    },
-    "udemy": {
-      "name": "Udemy",
-      "subtitle": "JavaScript - The Complete Guide",
-      "topics": [
-        "Deepened knowledge of JavaScript;",
-        "Brief introduction to Node.js and Express;",
-        "Introduction to TypeScript and React;",
-        "Brief introduction to Angular;",
-        "Introduction to npm package manager."
-      ]
+    "cards": {
+      "school": {
+        "name": "Istituto Superiore Majorana",
+        "subtitle": "Diploma in Computer Science",
+        "topics": [
+          "Studied the Java programming language;",
+          "Studied and developed a class project with MySQL database;",
+          "Studied and created a school project with Joomla."
+        ]
+      },
+
+      "udemy": {
+        "name": "Udemy",
+        "subtitle": "JavaScript - The Complete Guide",
+        "topics": [
+          "Deepened knowledge of JavaScript;",
+          "Brief introduction to Node.js and Express;",
+          "Introduction to TypeScript and React;",
+          "Brief introduction to Angular;",
+          "Introduction to npm package manager."
+        ]
+      },
+
+      "cisco": {
+        "name": "Cisco",
+        "subtitle": "Cisco Networking Academy",
+        "topics": [
+          "Cybersecurity Essentials;",
+          "Introduction to Cybersecurity;",
+          "CCNA R&S: Introduction to Networks;",
+          "Introduction to Packet Tracer;",
+          "Introduction to Routing and Switching;"
+        ]
+      }
     }
   },
 
@@ -49,6 +64,9 @@
       "all": "All"
     },
     "list": {
+      "angularNgFlix": {
+        "description": "NgFlix is a web application that allows users to search, filter, save and view details for movies and TV shows built with Angular 20, TypeScript, and TailwindCSS. The design was inspired by a Figma template. This project helped me to deepen my knowledge of Angular (18+) and libraries like RxJx."
+      },
       "angularPantoEcommerce": {
         "description": "Panto is a modern and responsive frontend for a furniture e-commerce, built with Angular 20, TypeScript, Tailwind CSS, NgRx, and PrimeNG. It allows users to browse, search, and filter a large furniture catalog, as well as save items to the wishlist or cart."
       },

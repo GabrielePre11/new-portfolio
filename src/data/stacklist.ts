@@ -4,6 +4,7 @@ import JS from "@/assets/images/technologies/JS.png";
 import TS from "@/assets/images/technologies/TS.png";
 import ReactIcon from "@/assets/images/technologies/React.png";
 import Next from "@/assets/images/technologies/NextJS.png";
+import Angular from "@/assets/images/technologies/Angular.png";
 import TailwindCSS from "@/assets/images/technologies/Tailwind.png";
 import Git from "@/assets/images/technologies/Git.png";
 
@@ -14,6 +15,7 @@ export const StackList = [
   { name: "TypeScript", image: TS },
   { name: "React", image: ReactIcon },
   { name: "Next.js", image: Next },
+  { name: "Angular", image: Angular },
   { name: "TailwindCSS", image: TailwindCSS },
   { name: "Git", image: Git },
 ];

@@ -10,6 +10,7 @@ import EducationCard from "@/components/molecules/education-card/EducationCard";
 
 export default function Education() {
   const t = useTranslations("education_section");
+  const tCards = useTranslations("education_cards.cards");
 
   return (
     <section id="education" aria-label="Education Section">
@@ -24,12 +25,12 @@ export default function Education() {
           {/*=============== Education Card ===============*/}
           {educationArticles.map((education) => (
             <EducationCard
-              key={education.name}
-              edcName={education.name}
+              key={education.id}
+              edcName={tCards(`${education.id}.name`)}
               edcImage={education.src}
               edcYear={education.year}
-              edcSubtitle={education.subtitle}
-              edcTopics={education.topics}
+              edcSubtitle={tCards(`${education.id}.subtitle`)}
+              edcTopics={tCards.raw(`${education.id}.topics`)}
             />
           ))}
         </ul>

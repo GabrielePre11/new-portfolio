@@ -17,7 +17,7 @@ export default function Technologies() {
         <Title title={t("title")} />
 
         {/*=============== Technologies ===============*/}
-        <ul className="grid items-center grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 py-4">
+        <ul className="flex items-center justify-center flex-wrap gap-3 md:gap-5 xl:gap-6 py-4">
           {StackList.map((tech) => (
             //=============== Tech Card ===============//
             <TechCard

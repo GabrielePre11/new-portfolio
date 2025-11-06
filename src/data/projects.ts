@@ -1,4 +1,5 @@
 // Projects Images
+import angularNgFlix from "@/assets/images/projects/angularNgFlix.jpg";
 import angularPantoEcommerce from "@/assets/images/projects/angular-panto-ecommerce.png";
 import mernReadlyApp from "@/assets/images/projects/MERNReadlyApp.png";
 import gameshelfImage from "@/assets/images/projects/gameshelf.png";
@@ -35,6 +36,20 @@ import MongoDB from "@/assets/images/projects/Icons/MongoDB.png";
 import Express from "@/assets/images/projects/Icons/Express.png";
 
 export const projects = [
+  {
+    src: angularNgFlix,
+    title: "NgFlix - Movies & Series",
+    descriptionKey: "angularNgFlix",
+    category: "Angular",
+    technologies: [
+      { name: "Angular", src: AngularIcon },
+      { name: "TypeScript", src: TypeScriptIcon },
+      { name: "TailwindCSS", src: TailwindCSSIcon },
+    ],
+    gitHubLink: "https://github.com/GabrielePre11/angular-ngflix",
+    demo: "https://angular-ngflix.vercel.app/",
+  },
+
   {
     src: angularPantoEcommerce,
     title: "Panto - Ecommerce",

@@ -28,6 +28,7 @@ export default function Header() {
             href="/CV_Gabriele_Prestano.pdf"
             download
             role="button"
+            aria-label="Download CV"
             className="flex items-center gap-1.5 bg-accent py-1 px-3 text-foreground border border-border rounded-xl transition-colors duration-300 hover:bg-accent/60 cursor-pointer"
           >
             <span aria-hidden="true">
