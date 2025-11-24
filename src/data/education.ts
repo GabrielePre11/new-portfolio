@@ -4,14 +4,14 @@ import CiscoLogo from "@/assets/images/education/CISCO.png";
 
 export const educationArticles = [
   {
-    id: "school",
-    src: HighSchoolLogo,
-    year: "09/2018 - 06/2023",
-  },
-  {
     id: "udemy",
     src: UdemyLogo,
     year: "03/2025 - 04/2025",
+  },
+  {
+    id: "school",
+    src: HighSchoolLogo,
+    year: "09/2018 - 06/2023",
   },
   {
     id: "cisco",
