@@ -1,4 +1,5 @@
 // Projects Images
+import peanStackPlantia from "@/assets/images/projects/peanStackPlantia.png";
 import angularNgFlix from "@/assets/images/projects/angularNgFlix.jpg";
 import angularPantoEcommerce from "@/assets/images/projects/angular-panto-ecommerce.png";
 import mernReadlyApp from "@/assets/images/projects/MERNReadlyApp.png";
@@ -34,8 +35,28 @@ import FramerMotion from "@/assets/images/projects/Icons/FramerMotion.svg";
 import Redux from "@/assets/images/projects/Icons/Redux.png";
 import MongoDB from "@/assets/images/projects/Icons/MongoDB.png";
 import Express from "@/assets/images/projects/Icons/Express.png";
+import PostgreSQL from "@/assets/images/technologies/PostgresSQL.png";
+import PrismaORM from "@/assets/images/technologies/PrismaORM.png";
+import Postman from "@/assets/images/technologies/Postman.png";
 
 export const projects = [
+  {
+    src: peanStackPlantia,
+    title: "PEAN - Plantia",
+    descriptionKey: "peanStackPlantia",
+    category: "Full Stack",
+    technologies: [
+      { name: "PostgreSQL", src: PostgreSQL },
+      { name: "Express", src: Express },
+      { name: "Angular", src: AngularIcon },
+      { name: "TypeScript", src: TypeScriptIcon },
+      { name: "TailwindCSS", src: TailwindCSSIcon },
+      { name: "Prisma ORM", src: PrismaORM },
+    ],
+    gitHubLink: "https://github.com/GabrielePre11/pean-stack-plantia",
+    demo: "https://pean-stack-plantia.onrender.com/",
+  },
+
   {
     src: angularNgFlix,
     title: "NgFlix - Movies & Series",

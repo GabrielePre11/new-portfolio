@@ -8,7 +8,7 @@
     "info": "Abierto a nuevas oportunidades",
     "firstname": "Gabriele Prestano",
     "role": "Desarrollador de Front End Junior",
-    "description": "Desarrollador de Front-End Junior autodidacta, apasionado por el desarrollo web y el diseño moderno. Trabajo principalmente con <strong>React</strong>, <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>TailwindCSS</strong> y <strong>Zustand/Redux</strong> para la gestión del estado. Soy curioso y determinado, siempre en busca de nuevos desafíos para crecer como desarrollador y crear interfaces limpias y funcionales.",
+    "description": "Desarrollador de Front-End Junior autodidacta, apasionado por el desarrollo web y el diseño moderno. Trabajo principalmente con <strong>Angular (v18+)</strong>, <strong>React</strong>, <strong>TypeScript</strong>, <strong>TailwindCSS</strong> y <strong>Zustand/Redux</strong> para la gestión del estado. Soy curioso y determinado, siempre en busca de nuevos desafíos para crecer como desarrollador y crear interfaces limpias y funcionales.",
     "contact-me-button": "Contáctame"
   },
 
@@ -64,6 +64,9 @@
       "all": "Todos"
     },
     "list": {
+      "peanStackPlantia": {
+        "description": "Plantia es un e-commerce full-stack basado en el stack PEAN (PostgreSQL, Express, Angular 20, Node.js). Características: autenticación JWT, panel de administración (CRUD), notificaciones Toast en tiempo real, gestión de la lista de deseos/carrito y filtros avanzados con Prisma ORM. Totalmente responsive con TailwindCSS y PrimeNG."
+      },
       "angularNgFlix": {
         "description": "NgFlix es una aplicación web que permite a los usuarios buscar, filtrar, guardar y ver detalles de películas y series de televisión. Fue desarrollada con Angular 20, TypeScript y TailwindCSS, y su diseño se inspiró en una plantilla de Figma."
       },

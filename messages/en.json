@@ -8,7 +8,7 @@
     "info": "Open to new opportunities",
     "firstname": "Gabriele Prestano",
     "role": "Junior Front End Developer",
-    "description": "Self-taught Jr. Front-End Developer, passionate about web development and modern design. I mainly work with <strong>React</strong>, <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>TailwindCSS</strong>, and <strong>Zustand/Redux</strong> for state management. I’m curious and determined, always seeking new challenges to grow as a developer and create clean and functional interfaces.",
+    "description": "Self-taught Jr. Front-End Developer, passionate about web development and modern design. I mainly work with <strong>Angular (v18+)</strong>, <strong>React</strong>, <strong>TypeScript</strong>, <strong>TailwindCSS</strong>, and <strong>Zustand/Redux</strong> for state management. I’m curious and determined, always seeking new challenges to grow as a developer and create clean and functional interfaces.",
     "contact-me-button": "Contact Me"
   },
 
@@ -64,8 +64,11 @@
       "all": "All"
     },
     "list": {
+      "peanStackPlantia": {
+        "description": "Plantia is a full-stack e-commerce built with the PEAN Stack (PostgreSQL, Express, Angular 20, Node.js). Features: JWT Auth, Admin Dashboard (CRUD), Real-time Toast notifications, Wishlist/Cart management, and advanced filtering with Prisma ORM. Fully responsive with TailwindCSS & PrimeNG."
+      },
       "angularNgFlix": {
-        "description": "NgFlix is a web application that allows users to search, filter, save and view details for movies and TV shows built with Angular 20, TypeScript, and TailwindCSS. The design was inspired by a Figma template. This project helped me to deepen my knowledge of Angular (18+) and libraries like RxJx."
+        "description": "NgFlix is a web application that allows users to search, filter, save and view details for movies and TV shows built with Angular 20, TypeScript, and TailwindCSS. The design was inspired by a Figma template. This project helped me to deepen my knowledge of Angular (18+) and libraries like RxJS."
       },
       "angularPantoEcommerce": {
         "description": "Panto is a modern and responsive frontend for a furniture e-commerce, built with Angular 20, TypeScript, Tailwind CSS, NgRx, and PrimeNG. It allows users to browse, search, and filter a large furniture catalog, as well as save items to the wishlist or cart."
