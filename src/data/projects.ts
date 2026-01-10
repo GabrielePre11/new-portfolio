@@ -37,7 +37,6 @@ import MongoDB from "@/assets/images/projects/Icons/MongoDB.png";
 import Express from "@/assets/images/projects/Icons/Express.png";
 import PostgreSQL from "@/assets/images/technologies/PostgresSQL.png";
 import PrismaORM from "@/assets/images/technologies/PrismaORM.png";
-import Postman from "@/assets/images/technologies/Postman.png";
 
 export const projects = [
   {
