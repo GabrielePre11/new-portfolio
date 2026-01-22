@@ -9,13 +9,13 @@ export const educationArticles = [
     year: "03/2025 - 04/2025",
   },
   {
-    id: "school",
-    src: HighSchoolLogo,
-    year: "09/2018 - 06/2023",
-  },
-  {
     id: "cisco",
     src: CiscoLogo,
     year: "2021 - 2023",
+  },
+  {
+    id: "school",
+    src: HighSchoolLogo,
+    year: "09/2018 - 06/2023",
   },
 ];
